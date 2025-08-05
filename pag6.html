@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Harry Potter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="icon" href="hp.png">
+ <style>
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@200&family=Irish+Grover&family=Milonga&family=Peralta&display=swap');
+@font-face {
+  font-family: harryp;
+  src: url('harryp.ttf') format('opentype');
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+margin:0;
+}
+
+.nav-link{
+  font-family:  'Milonga', cursive;
+}
+.cod{
+background-image: url(fundo6.png);
+height: 800px;
+background-size: cover;
+width: 100vw;
+position: relative;
+}
+body {
+    margin: 0px;
+}
+
+#container {
+    position: absolute;
+    margin: auto;
+    width: 100vw;
+    height: 80pt;
+    top: 0;
+    bottom: 0;
+
+    filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+
+    font-family:harryp;
+    font-size:200px;
+    color: rgb(203, 203, 203);
+
+    text-align: center;
+
+    user-select: none;
+}
+
+.dupla{
+    background-image: url(fundodupla.png);
+    height: 930px;
+background-size: cover;
+width: 100vw;
+position: relative;
+}
+
+.curso{
+    background-image: url(fundoc.png);
+    height: 930px;
+background-size: cover;
+width: 100vw;
+position: relative;
+}
+
+
+.image{
+    -webkit-filter:grayscale(100%);
+    height: 600px;
+    transition: 1s;
+    padding-top:  40px;
+    padding-left: 50px;
+    float:left ;
+}
+.image:hover{
+    -webkit-filter:grayscale(0%);
+    transition: 1s;
+}
+h1 {
+  font-family: "Montserrat Medium";
+  max-width: 40ch;
+  text-align: center;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+.a {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+  color: rgb(168, 168, 168);
+  font-family: harryp;
+  font-size: 80px;
+}
+
+.a:nth-child(1) {
+  animation: fade-in 10s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+.a:nth-child(2) {
+  animation: fade-in 10s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.prof{
+    background-image: url(cod.jpg);
+    height: 930px;
+background-size: cover;
+width: 100vw;
+position: relative;
+}
+
+.im{
+    transition: all 1s;
+    float: right;
+    height: 300px;
+    padding-right: 80px;
+    margin-top: 150px;
+}
+    .im:hover
+{
+        -webkit-transform: rotateZ(-30deg);
+        -ms-transform: rotateZ(-30deg);
+        transform: rotateZ(-30deg);
+        transition: all 1s;
+}
+</style>
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+    <div class="container">
+      <a class="navbar-brand" href="pag1.html">
+        <img src="hp.png" style="height:80px;">
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="mx-auto"></div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="pag1.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="pag2.html">A série</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="pag3.html">Casas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="pag4.html">Personagens</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="pag5.html">Feitiços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="pag6.html">Sobre</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <script type="text/javascript">
+    var nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 100) {
+        nav.classList.add('bg-dark', 'shadow');
+      } else {
+        nav.classList.remove('bg-dark', 'shadow');
+      }
+    });
+  </script>
+
+ <section class="cod">
+    <div id="container">
+        <span id="text1"></span>
+        <span id="text2"></span>
+    </div>
+    
+    <svg id="filters">
+        <defs>
+            <filter id="threshold">
+                <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                      0 1 0 0 0
+                      0 0 1 0 0
+                      0 0 0 255 -140" />
+            </filter>
+        </defs>
+    </svg>
+    <script>
+        const elts = {
+    text1: document.getElementById("text1"),
+    text2: document.getElementById("text2")
+};
+
+const texts = [
+    "Sobre",
+    "Dupla",
+    "Curso",
+    "Disciplina",
+    "Professores",
+];
+
+const morphTime = 1;
+const cooldownTime = 0.25;
+
+let textIndex = texts.length - 1;
+let time = new Date();
+let morph = 0;
+let cooldown = cooldownTime;
+
+elts.text1.textContent = texts[textIndex % texts.length];
+elts.text2.textContent = texts[(textIndex + 1) % texts.length];
+
+function doMorph() {
+    morph -= cooldown;
+    cooldown = 0;
+
+    let fraction = morph / morphTime;
+
+    if (fraction > 1) {
+        cooldown = cooldownTime;
+        fraction = 1;
+    }
+
+    setMorph(fraction);
+}
+
+function setMorph(fraction) {
+    elts.text2.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+    elts.text2.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
+
+    fraction = 1 - fraction;
+    elts.text1.style.filter = `blur(${Math.min(8 / fraction - 8, 100)}px)`;
+    elts.text1.style.opacity = `${Math.pow(fraction, 0.4) * 100}%`;
+
+    elts.text1.textContent = texts[textIndex % texts.length];
+    elts.text2.textContent = texts[(textIndex + 1) % texts.length];
+}
+
+function doCooldown() {
+    morph = 0;
+
+    elts.text2.style.filter = "";
+    elts.text2.style.opacity = "100%";
+
+    elts.text1.style.filter = "";
+    elts.text1.style.opacity = "0%";
+}
+
+function animate() {
+    requestAnimationFrame(animate);
+
+    let newTime = new Date();
+    let shouldIncrementIndex = cooldown > 0;
+    let dt = (newTime - time) / 1000;
+    time = newTime;
+
+    cooldown -= dt;
+
+    if (cooldown <= 0) {
+        if (shouldIncrementIndex) {
+            textIndex++;
+        }
+
+        doMorph();
+    } else {
+        doCooldown();
+    }
+}
+
+animate();
+    </script>
+
+    
+ </section>
+ <section class="dupla">
+    <div style="padding-top:100px">
+    <img src = "dupla.png" class="image">
+      <div class="col-md-6" style="float:right ; padding-right:90px; padding-top:120px">
+        <div class="h-100 p-5 bg-light border rounded-3">
+            <h1 >
+                <span class="a">A</span>
+                <span class="a">dupla</span>
+              </h1>
+          <p style="font-family: 'Milonga', cursive;">Site criado pela dupla Ana Carolina de Jesus Sousa e Geisa Vitória Monteiro Pereira, juntas usando a criativdade para expressar suas preferências, dessa vez utilizando como base o tema Harry Potter! Dupla existente a 12 anos e que agora podem contar suas experiências através dos componentes curriculares e sites confeccionados por ambas. </p>
+        </div>
+      </div>
+    </div>
+</div>
+ </section>
+
+ <section class="curso">
+    <div style="padding-top:100px;font-family: 'Milonga', cursive;">
+          <div class="col-md-6" style="float:left ; padding-left:90px; padding-top:10px">
+            <div class="h-100 p-5 bg-light border rounded-3">
+                <h1 >
+                    <span class="a">O curso</span>
+                    <span class="a">Infonet</span>
+                  </h1>
+              <p style="font-family: 'Milonga', cursive;">Infonet é conhecida por sua determinação e coragem, o curso que envolve muita criatividade, irreverência e alegria! Engloba toda a parte digital e gráfica dentro de páginas web e eletrônicos, tendo como componentes curriculares os itens e os professores:</p>
+              <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">Disciplina</th>
+                        <th scope="col">Professores</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Interface Web</td>
+                        <td>Cristiane e Ronildo</td>
+                      </tr>
+                      <tr>
+                        <td>Programação e algoritmo</td>
+                        <td>Cristiane e Ronildo</td>
+                      </tr>
+                      <tr>
+                        <td>Gestão de conteúdo Web</td>
+                        <td>Kelly e Fabiano</td>
+                      </tr>
+                      <tr>
+                        <td>Fundamentos da Informática</td>
+                        <td>Kelly e Madureira</td>
+                      </tr>
+                      <tr>
+                        <td>Arte digital</td>
+                        <td>Cristiane e Kelly</td>
+                      </tr>
+                      <tr>
+                        <td>Banco de dados</td>
+                        <td>Fabiano e Kelly</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+          </div>
+        </div>
+    </div>
+ </section>
+
+
+ <section style="padding-top: 130px;"class="prof">
+    <div style="float: left ; padding-left: 100px;" class="col-md-6">
+        <div class="h-100 p-5 bg-light border rounded-3">
+            <h1 >
+                <span class="a">A disciplina</span>
+                <span class="a">e os professores</span>
+              </h1>
+              <p style="font-family: 'Milonga', cursive;">A disciplina Interface Web possui grande importância dentro do curso de Informática para internet, isso se dá atrvés de sua relevância na execução de projetos extrcurriculares e da matéria em específico, servindo como base para diversos trabalhos e ajudando no exercício criativo dos alunos, no atual momento, trabalhamos com trés bases:</p>
+          <div style="text-align: center;">
+              <img  style="height: 200px;" src="lin.png">
+            </div>
+            <p style="font-family: 'Milonga', cursive;">Os professores responsáveis por transmitir todas as informações são Cristiane e Ronildo, os quais já trabalham na área educacional a muitos anos, principalmente dentro do EtecVav, juntos planejam e ensinam em diferentees componentes curriculares em cursos como Informática para internet e Desenvolvimento de sistemas.</p>
+
+        </div>
+      </div>
+    </div>
+          <img src="icon.png" class="im" alt="Example image">
+        </section>
+        
+          <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+              <p class="col-md-4 mb-0 text-muted">&copy; 2022 Ana Carolina e Geisa Vitória</p>
+          
+              <a href="pag1.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <img class="bi me-2" width="40" height="32" src="hp.png">
+              </a>
+          
+              <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="pag6.html" class="nav-link px-2 text-muted">Sobre</a></li>
+                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Referências
+                </button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel4">Referências usadas</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <a href="https://www.papodecinema.com.br/especiais/especial-harry-potter/">Papo de cinema Sinopse</a>
+                        <br>
+                        <a href="https://www.ebiografia.com/j_k_rowling/">Ebiografia Autora</a>
+                        <br>
+                        <a href="https://www.aficionados.com.br/personagens-importantes-harry-potter/">Aficionados personagens</a>
+                        <br>
+                        <a href="https://segredosdomundo.r7.com/harry-potter-historia/">Segredos do Mundo Historia</a>
+                        <br>
+                        <a href="https://www.aficionados.com.br/harry-potter-casas-hogwarts-historia-valores-membros/">Aficionados casas</a>
+                        <br>
+                        <a href="https://aminoapps.com/c/potter-amino-em-portugues/page/blog/biografia-harry-potter-e-resumo-de-cada-filme/rVk7_0eieurZowWdG8522aXXvvmlErV0Y4">Amino Apps filmes</a>
+                        <br>
+                        <a href="https://www.fnac.pt/Harry-Potter-10-feiticos-que-todos-deviamos-conseguir-usar-no-dia-a-dia/cp1020/w-4">Fnac feitiços</a>
+                        <br>
+                        <a href="https://www.hbobrasil.com/news/detail/art-harry-potter">HBO Harry Potter</a>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ul>
+            </footer>
+          </div>
+    </body>
+    
+    
+    </html>
+
+
+ </section>

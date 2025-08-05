@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A História de Harry Potter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="icon" href="hp.png">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/album/">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@200&family=Irish+Grover&family=Milonga&family=Peralta&display=swap');
+@font-face {
+  font-family: harryp;
+  src: url('harryp.ttf') format('opentype');
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+margin:0;
+background-color: rgb(0, 9, 91, 0.968)
+
+}
+
+.nav-link{
+  font-family:  'Milonga', cursive;
+}
+
+.text{
+ color:white;
+ font-size: 150%;
+}
+
+.harry{
+  height: 80px;
+}
+
+.img{
+  float: right;
+  margin-top: 150px;
+  margin-right: 80px;
+}
+
+.waviy {
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 80px;
+  color: rgb(168, 168, 168);
+  font-family: 'harryp';
+  animation: flip 3s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+.s{
+  margin-left: 50px;
+  font-family: 'harryp';
+}
+.efeito{
+    float: center;
+    width: 100%;
+}
+.subtitulo{
+position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: rgb(168, 168, 168);
+  font-family:  'Milonga', cursive;
+  margin-top: 10px;
+}
+.su{
+  text-align: center;
+}
+.bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(252, 240, 240, 0.1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+            section {
+                position: relative;
+                width: 100%;
+                height: 100vh;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            section h2 {
+                position: relative;
+                display: inline-block;
+                font-size: 200px;
+                color: rgb(168, 168, 168);
+                font-family: 'harryp';
+                margin-top: 150px;
+            }
+            section span {
+                position: absolute;
+                bottom: -50px;
+                background: transparent;
+                border-radius: 50%;
+  
+                pointer-events: none;
+                box-shadow: inset 0 0 10px 
+                  rgba(225, 225, 225, 0.5);
+                animation: animate 4s linear infinite;
+            }
+            sectionspan: before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                transform: scale(0.25) translate(-70%, -70%);
+                background: 
+                  radial-gradient(#ffffff, transparent);
+                border-radius: 50%;
+            }
+            @keyframes animation {
+                0% {
+                    transform: translateY(0%);
+                    opacity: 1;
+                }
+                99% {
+                    opacity: 1;
+                }
+                100% {
+                    transform: translateY(-1200%);
+                    opacity: 1;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <h2>Os Feitiços</h2>
+        </section>
+        <script type="text/javascript">
+            function createBubble() {
+                const section = 
+                      document.querySelector("Section");
+                const createElement = 
+                      document.createElement("span");
+                var size = Math.random() * 60;
+  
+                createElement.style.animation = 
+                  "animation 6s linear infinite";
+                createElement.style.width = 50 + size + "px";
+                createElement.style.height = 50 + size + "px";
+                createElement.style.left = 
+                  Math.random() * innerWidth + "px";
+                section.appendChild(createElement);
+  
+                setTimeout(() => {
+                    createElement.remove();
+                }, 4000);
+            }
+            setInterval(createBubble, 100);
+        </script>
+  </style>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+        <div class="container">
+          <a class="navbar-brand" href="pag1.html">
+            <img src="hp.png" style="height:80px;">
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mx-auto"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="pag1.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="pag2.html">A série</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="pag3.html">Casas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="pag4.html">Personagens</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="pag5.html">Feitiços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="pag6.html">Sobre</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <script type="text/javascript">
+        var nav = document.querySelector('nav');
+  
+        window.addEventListener('scroll', function () {
+          if (window.pageYOffset > 100) {
+            nav.classList.add('bg-dark', 'shadow');
+          } else {
+            nav.classList.remove('bg-dark', 'shadow');
+          }
+        });
+      </script>
+ 
+    <div class="linha">
+    <img class="efeito" src="linha.png">
+    </div>
+    
+    <main>
+
+        <section class="py-5 text-center container">
+          <div class="row py-lg-5">
+            <div class="su">
+              <h1 class="subtitulo">Feitiços no mundo de Harry</h1>
+              <br>
+              <br>
+              <p class="text">Os Feitiços são ações-mágicas usadas ​​pelos bruxos para conseguir efeitos úteis sem o benefício da tecnologia moderna, podendo ser divididos de forma generalizada em encantamentos, maldições, azarações, transfigurações e poções. Alguns deles são:</p>
+              <p>
+            </div>
+          </div>
+        </section>
+      
+        <div class="album py-5 bg-blue">
+          <div class="container">
+      
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img class="Feitiços" src="Expelliarmus (1).png">
+      
+                  <div class="card-body">
+                    <p class="card-text">O feitiço Expelliarmus é um feitiço Desarmante; ele arranca a arma das mãos da vítima. Quando é usado com maior força (ou quando a vítima não está armada) pode erguer o oponente do chão.</p>
+                
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img class="Feitiços" src="Estupefaça.png">
+      
+                  <div class="card-body">
+                    <p class="card-text">O feitiço "estupefaço" consiste em deixar uma pessoa inconsciente com um faixo vermelho de luz. É um feitiço muito utilizado pelos Guardadores de Dragões, que tentam manter os animais sobre controle.</p>
+                  
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img class="Feitiços" src="Expecto Patronum.png">
+      
+                  <div class="card-body">
+                    <p class="card-text">Expecto Patronum, ou o Feitiço Patronus, conjura um Patronus, que pode ser uma simples fumaça branca ou, para os conjuradores mais avançados, aparecer como uma forma branca prateada de um animal. </p>
+                   
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img class="Feitiços" src="Avada Kedavra.png">
+      
+                  <div class="card-body">
+                    <p class="card-text">Avada Kedavra, também é conhecido como Maldição Mortal, mata uma pessoa instantaneamente e sem ferimentos. Não há contrafeitiço para isso, e a única pessoa que sobreviveu a essa maldição foi Harry Potter.</p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img class="Feitiços" src="Crucio.png">
+      
+                  <div class="card-body">
+                    <p class="card-text">Outra das Maldições Imperdoáveis, é a Maldição Cruciatus que tem o objetivo de causar enorme sofrimento físico em sua vítima. A palavra “cruciatus” significa “tortura” em latim. </p>
+                  
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img class="Feitiços" src="Imperio.png">
+      
+                  <div class="card-body">
+                    <p class="card-text">A Imperio é uma ferramenta das Artes das Trevas. É uma das magias mais poderosas e sinistras conhecidas no mundo bruxo. Quando lançada com sucesso, coloca a vítima sob o controle daquele que a lançou.</p>
+                   
+                  </div>
+                </div>
+              </div>
+      
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img class="Feitiços" src="Accio.png">
+      
+                  <div class="card-body">
+                    <p class="card-text">"Accio" é um feitiço Convocatório. É utilizado para atrair as coisas a um bruxo quando mencionada a palavra, podendo servir para chamar itens de longa distância para suas mãos. </p>
+                  
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img class="Feitiços" src="Lumos.png">
+                  <div class="card-body">
+                    <p class="card-text">Feitiço de Harry Potter em que quando falado, permite que a varinha emita um sinal de uma pequena luz florescente, brilhante, capaz de iluminar lugares e coisas, tornando-a assim uma espécie de lanterna.</p>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img class="Feitiços" src="Alorromora.png">
+                  <div class="card-body">
+                    <p class="card-text">O Feitiço de Desbloqueio, também conhecido como Amigo do Ladrão (Arrohomora) é um feitiço que abre portas e janelas que não são protegidas por magia. Pode também abrir as portas bloqueadas pelo Feitiço Colloportus.</p>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+      </main>
+
+      <section style="height:150px; background-color: white;">
+        <div class="container">
+          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-muted">&copy; 2022 Ana Carolina e Geisa Vitória</p>
+        
+            <a href="pag1.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+              <img class="bi me-2" width="40" height="32" src="hp.png">
+            </a>
+        
+            <ul class="nav col-md-4 justify-content-end">
+              <li class="nav-item"><a href="pag6.html" class="nav-link px-2 text-muted">Sobre</a></li>
+              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Referências
+              </button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Referências usadas</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <a href="https://www.papodecinema.com.br/especiais/especial-harry-potter/">Papo de cinema Sinopse</a>
+                      <br>
+                      <a href="https://www.ebiografia.com/j_k_rowling/">Ebiografia Autora</a>
+                      <br>
+                      <a href="https://www.aficionados.com.br/personagens-importantes-harry-potter/">Aficionados personagens</a>
+                      <br>
+                      <a href="https://segredosdomundo.r7.com/harry-potter-historia/">Segredos do Mundo Historia</a>
+                      <br>
+                      <a href="https://www.aficionados.com.br/harry-potter-casas-hogwarts-historia-valores-membros/">Aficionados casas</a>
+                      <br>
+                      <a href="https://aminoapps.com/c/potter-amino-em-portugues/page/blog/biografia-harry-potter-e-resumo-de-cada-filme/rVk7_0eieurZowWdG8522aXXvvmlErV0Y4">Amino Apps filmes</a>
+                      <br>
+                      <a href="https://www.fnac.pt/Harry-Potter-10-feiticos-que-todos-deviamos-conseguir-usar-no-dia-a-dia/cp1020/w-4">Fnac feitiços</a>
+                      <br>
+                      <a href="https://www.hbobrasil.com/news/detail/art-harry-potter">HBO Harry Potter</a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </footer>
+        </div>
+      </section>
+      
+    </body>
+</html>

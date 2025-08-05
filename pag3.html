@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>As casas de Harry Potter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="icon" href="hp.png">
+    <link href="../assets/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel-rtl/">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@200&family=Irish+Grover&family=Milonga&family=Peralta&display=swap');
+@font-face {
+  font-family: harryp;
+  src: url('harryp.ttf') format('opentype');
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+margin:0;
+background-image: url(Hogwarts.jpeg);
+background-repeat: no-repeat;
+background-size: 100%;
+background-attachment: fixed;
+
+}
+
+.símbolo{
+  float: center;
+  width: 10%;
+  margin-top: 150px;
+}
+
+.casas{
+ text-align: center;
+}
+
+.titulo{
+
+position: relative;
+  display: inline-block;
+  font-size: 150px;
+  color: rgb(255, 255, 255);
+  font-family: 'harryp';
+  margin-top: 20px;
+  
+
+}
+.ti{
+  text-align: center;
+}
+
+.filmes{
+  float: center;
+  width: 85%;
+  margin-left:7%;
+
+}
+
+.nav-link{
+  font-family:  'Milonga', cursive;
+}
+
+.text{
+  position: relative;
+  display: inline-block;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  font-family:  'Milonga', cursive;
+  margin-top: 10px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.text_2{
+ text-align: center;
+}
+
+.harry{
+  height: 80px;
+}
+
+.img{
+  float: right;
+  margin-top: 150px;
+  margin-right: 80px;
+}
+
+.waviy {
+  position: relative;
+}
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 80px;
+  color: rgb(168, 168, 168);
+  font-family: 'harryp';
+  animation: flip 3s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+.s{
+  margin-left: 50px;
+  font-family: 'harryp';
+
+}
+.lead{
+color:rgb(255, 255, 255)
+}
+
+.text-muted {
+color: #fff;
+text-decoration:none !important;
+transition:1s ;
+}
+.text-muted:hover {
+text-shadow: 0 0 4px #fff, 0 0 4px #ff0;
+transition:1s ;
+}
+  </style>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+        <div class="container">
+          <a class="navbar-brand" href="pag1.html">
+            <img src="hp.png" style="height:80px;">
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="mx-auto"></div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="pag1.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="pag2.html">A série</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="pag3.html">Casas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="pag4.html">Personagens</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="pag5.html">Feitiços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="pag6.html">Sobre</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <script type="text/javascript">
+        var nav = document.querySelector('nav');
+  
+        window.addEventListener('scroll', function () {
+          if (window.pageYOffset > 100) {
+            nav.classList.add('bg-dark', 'shadow');
+          } else {
+            nav.classList.remove('bg-dark', 'shadow');
+          }
+        });
+    </script>
+
+ <div class="casas">
+     <img class="símbolo" src="casas.png">
+ </div>
+
+ <div class="ti">
+    <p class="titulo">Casas de Hogwarts </p>
+</div>
+
+<div class="text_2">
+<p class="text">  Hogwarts é formada por quatro Casas, que serão como suas famílias durante todo o seus sete anos dentro da Escola, é nela que você fará seus melhores amigos e conviver diariamente com eles. Cada Casa de Hogwarts tem uma história de anos e uma reputação a zelar então tome muito cuidado quando for escolher sua Casa pois irá ser uma escolha sem volta. As Casas são, Grifinória, Corvinal, Lufa-Lufa e Sonserina.
+</p>
+</div>
+
+<!-- START THE FEATURETTES -->
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+  <div  style="padding-left:30px ;" class="col-md-7">
+    <h2 class="featurette-heading fw-normal lh-1"> <span style="font-family:harryp; color:rgb(203, 203, 203); font-size: 60px;" class="text-muted"> Grifinória </span></h2>
+    <p class="lead">
+        A Grifinória foi fundada por Godric Gryffindor.
+        Os selecionados para essa casa possuem muita bravura e coragem. A Grifinória é odiada pela casa Sonserina, de acordo com Fineus Nigellus Black, isso porque eles salvam a pela dos outros e não a de si mesmos. 
+        "E quais eram as qualidades que definem um Grifino ?", e uma vozinha na cabeça de Harry respondeu: "a audácia, a coragem e o cavalheirismo definem os Grifinos." 
+        <br>
+        <br>
+        "Quem sabe sua morada é na Grifinória, casa onde habitam os corações indômitos. Ousadia, sangue-frio e nobreza destacam os alunos da Grifinória dos demais."
+    </p>
+  </div>
+  <div class="col-md-5">
+    <img class="grifinoria" src="grifinoria.JPG">
+
+  </div>
+</div>
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+  <div style="padding-right:30px ;" class="col-md-7 order-md-2">
+    <h2 class="featurette-heading fw-normal lh-1"><span style="font-family:harryp; color:rgb(203, 203, 203); font-size: 60px;" class="text-muted"> Corvinal</span></h2>
+    <p class="lead"> 
+    A Corvinal foi fundada por Rowena Revenclaw. 
+    Acolhe os mais inteligentes dos alunos de Hogwarts. Os membros da Corvinal são inteligentes, perspicazes e bem humorados. Possuem uma grande sede de conhecimentos, e pensam rápido na hora de dizer algo gracioso. Também pode ser percebido algum tipo de sensibilidade peculiar em cada um dos membros da casa. A Corvinal também tem uma fama de ter as meninas e garotos mais bonitos de toda a escola, mas talvez isso seja só coincidência ou mito.
+    <br>
+    <br>
+    "Quem sabe será a velha e sabia Corvinal, a Casa dos que tem a mente sempre alerta onde os homens de grande espírito e saber sempre encontraram companheiros seus iguais."
+   </p>
+  </div>
+  <div class="col-md-5 order-md-1">
+    <img class="corvinal" src="corvinal.jpg"  width="477" height="283" >
+
+  </div>
+</div>
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+  <div style="padding-left:30px ;" class="col-md-7">
+    <h2 class="featurette-heading fw-normal lh-1"><span style="font-family:harryp; color:rgb(203, 203, 203); font-size: 60px;" class="text-muted">Lufa-Lufa</span></h2>
+    <p class="lead">A Lufa-Lufa foi fundada por Helga Hufflepuff.
+    Os alunos da Lufa-Lufa os que trabalham muito, os pacientes de mente e amigos leais e justos. Suas demandas são determinadas e, ao realizar um trabalho, dedica-se a ele com toda a sua força de vontade, criatividade e inteligência. Quando faz algo é pra ser o melhor - a determinação.
+    <br>
+    <br>
+    "Quem sabe é a Lufa-Lufa que você vai morar, onde seus soldados são justos e leiais, pacientes, sinceros, sem medo da dor."</p>
+  </div>
+  <div class="col-md-5">
+    <img class="Lufa-Lufa" src="lufalufa.jpg"  width="477" height="283" >
+
+  </div>
+</div>
+
+<hr class="featurette-divider">
+
+<div class="row featurette">
+  <div style="padding-right:30px ;" class="col-md-7 order-md-2">
+    <h2 class="featurette-heading fw-normal lh-1"><span style="font-family:harryp; color:rgb(203, 203, 203); font-size: 60px;" class="text-muted"> Sonserina</span></h2>
+    <p class="lead"> 
+        A Sonserina foi fundada por Salazar Slytherin.
+        Sonserinos são astutos e tem um enorme desejo de poder. São ambiciosos, capazes de usar quaisquer métodos para atingir seus objetivos. A maioria dos bruxos das trevas pertenceram a esta casa. Os Sonserinos se orgulham do sangue-puro. Os estudantes puro-sangue são, na maioria das vezes, enviados a essa casa, mas isso não significa que só existem puro-sangues na casa. A Sonserina é por vez associado ao mal, porém existem estudantes dessa casa bondosos. 
+        <br>
+        <br>
+        "Ou quem sabe você pertence à Sonserina e ali fará seus verdadeiros amigos. Homens de astucia que usam quaisquer meios para atingir os fins que antes colimaram."
+   </p>
+  </div>
+  <div class="col-md-5 order-md-1">
+    <img class="sonserina" src="sonserina.jpg"  width="477" height="283" >
+  </div>
+</div>
+
+
+<hr class="featurette-divider">
+
+<!-- /END THE FEATURETTES -->
+
+</div><!-- /.container -->
+
+ <section style="height:150px; background-color: white;">
+        <div class="container">
+          <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-muted">&copy; 2022 Ana Carolina e Geisa Vitória</p>
+        
+            <a href="pag1.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+              <img class="bi me-2" width="40" height="32" src="hp.png">
+            </a>
+        
+            <ul class="nav col-md-4 justify-content-end">
+              <li class="nav-item"><a href="pag6.html" class="nav-link px-2 text-muted">Sobre</a></li>
+              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Referências
+              </button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Referências usadas</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <a href="https://www.papodecinema.com.br/especiais/especial-harry-potter/">Papo de cinema Sinopse</a>
+                      <br>
+                      <a href="https://www.ebiografia.com/j_k_rowling/">Ebiografia Autora</a>
+                      <br>
+                      <a href="https://www.aficionados.com.br/personagens-importantes-harry-potter/">Aficionados personagens</a>
+                      <br>
+                      <a href="https://segredosdomundo.r7.com/harry-potter-historia/">Segredos do Mundo Historia</a>
+                      <br>
+                      <a href="https://www.aficionados.com.br/harry-potter-casas-hogwarts-historia-valores-membros/">Aficionados casas</a>
+                      <br>
+                      <a href="https://aminoapps.com/c/potter-amino-em-portugues/page/blog/biografia-harry-potter-e-resumo-de-cada-filme/rVk7_0eieurZowWdG8522aXXvvmlErV0Y4">Amino Apps filmes</a>
+                      <br>
+                      <a href="https://www.fnac.pt/Harry-Potter-10-feiticos-que-todos-deviamos-conseguir-usar-no-dia-a-dia/cp1020/w-4">Fnac feitiços</a>
+                      <br>
+                      <a href="https://www.hbobrasil.com/news/detail/art-harry-potter">HBO Harry Potter</a>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </footer>
+        </div>
+      </section>
+      
+    </body>
+    </html>
